@@ -1,0 +1,149 @@
+body {
+  min-height: 100vh;
+  margin: 0px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(193, 184, 184),
+    rgb(250, 250, 191)
+  );
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.header {
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-box {
+  height: 100%;
+}
+.img-box img {
+  height: 100%;
+  cursor: pointer;
+  width: 100%;
+}
+.mid-portion {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  border: 3px solid rgb(125, 225, 112);
+  /* max-height: 70vh; */
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+.award-img-box {
+  width: 90%;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px dotted yellow;
+}
+.award-img-box img {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details-achievement {
+  padding: 10px;
+  width: 100%;
+}
+
+.guest-img-box {
+  border: 1px dotted rgb(36, 70, 163);
+  width: 100%;
+}
+.guest-img-box img {
+  width: 100%;
+  padding: 8px;
+}
+.list-Of-achievements {
+  margin-left: 30px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.lower-info {
+  font-size: 14px;
+  margin-left: 10px;
+}
+.install {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.lower-0f-main {
+  border: 2px solid yellowgreen;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lower-0f-main img {
+  width: 80%;
+  padding: 10px;
+}
+.pump-info {
+  font-size: 14px;
+  text-align: center;
+}
+.strip {
+  height: 2px;
+  background: #d51616;
+  width: 98%;
+  margin: 15px 0px;
+  align-self: center;
+}
+.diff-segments {
+  font-size: 15px;
+  align-self: center;
+  font-weight: 600;
+}
+.segments {
+  font-size: 14px;
+  border: 2px solid rebeccapurple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.segments strong {
+  color: red;
+}
+.segments div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background: rgb(253, 38, 38);
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  height: 35px;
+  gap: 5px;
+  font-size: 28px !important;
+  color: white;
+}
+.icons > div {
+  font-size: 17px !important;
+  align-self: flex-end;
+}
