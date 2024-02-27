@@ -30,8 +30,6 @@ body {
 .mid-portion {
   display: grid;
   grid-template-columns: 1fr 1.7fr;
-  border: 3px solid rgb(125, 225, 112);
-  /* max-height: 70vh; */
 }
 main {
   display: flex;
@@ -39,12 +37,11 @@ main {
 }
 .award-img-box {
   width: 90%;
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  border: 1px dotted yellow;
+  justify-self: center;
+  /* for grid child */
 }
 .award-img-box img {
   width: 80%;
@@ -58,12 +55,13 @@ main {
 }
 
 .guest-img-box {
-  border: 1px dotted rgb(36, 70, 163);
-  width: 100%;
+  width: 90%;
 }
 .guest-img-box img {
   width: 100%;
   padding: 8px;
+  justify-self: center;
+  height: 100%;
 }
 .list-Of-achievements {
   margin-left: 30px;
@@ -80,7 +78,6 @@ main {
 }
 
 .lower-0f-main {
-  border: 2px solid yellowgreen;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -97,10 +94,10 @@ main {
 }
 .strip {
   height: 2px;
-  background: #d51616;
   width: 98%;
   margin: 15px 0px;
   align-self: center;
+  background: #fa0303;
 }
 .diff-segments {
   font-size: 15px;
@@ -108,25 +105,18 @@ main {
   font-weight: 600;
 }
 .segments {
-  font-size: 14px;
-  border: 2px solid rebeccapurple;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 5px 10px;
+  font-size: small;
   justify-content: center;
-  align-items: center;
-  font-weight: 500;
-  margin-top: 15px;
 }
-.segments strong {
-  color: red;
+.segment-item {
+  border-right: 2px solid red;
+  gap: 2px;
+  margin: 2px 2px;
+  padding: 2px;
 }
-.segments div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
 .footer {
   background: rgb(253, 38, 38);
   height: 100px;
@@ -134,6 +124,8 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 98%;
+  margin: auto;
 }
 
 .icons {
@@ -142,8 +134,60 @@ main {
   gap: 5px;
   font-size: 28px !important;
   color: white;
+  margin: 0px 40px;
 }
 .icons > div {
   font-size: 17px !important;
   align-self: flex-end;
+}
+.segment-each {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+@media (max-width: 960px) {
+  .mid-portion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .segment-each {
+    font-size: 10px !important;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .details-achievement {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  .award-img-box {
+    width: 60%;
+  }
+  .install {
+    padding: 4px;
+  }
+  .diff-segments {
+    font-size: 10px;
+  }
+  .pump-info {
+    font-size: 11px;
+  }
+  .icons {
+    margin: 2px;
+  }
+  .large-seg {
+    border: 2px solid firebrick;
+    display: flex;
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .just-inner-top-level {
+    display: flex;
+    flex-direction: column;
+  }
 }

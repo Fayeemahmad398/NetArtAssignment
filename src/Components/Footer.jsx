@@ -1,4 +1,3 @@
-import React from 'react';
 import { IoLogoFacebook } from "react-icons/io5";
 import { IoCall } from "react-icons/io5"; import { TbWorld } from "react-icons/tb";
 function Footer() {

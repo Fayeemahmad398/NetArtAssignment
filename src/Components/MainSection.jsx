@@ -40,7 +40,7 @@ function MainSection() {
 
             </div>
 
-            <p className="lower-info install">INSTALLED OVER 10 LAKHS STAR RATED PUMPSETS ACROSS THE COUNTRY RESULTING IN A CUMULATIVE SAVING OF MORE THAN 9,000 MILLION UNITS OF POWER FOR THE NATION. </p>
+            <p className="lower-info install">{"*"} INSTALLED OVER 10 LAKHS STAR RATED PUMPSETS ACROSS THE COUNTRY RESULTING IN A CUMULATIVE SAVING OF MORE THAN 9,000 MILLION UNITS OF POWER FOR THE NATION. </p>
             <div className="lower-0f-main">
                 <img src={pumpsImg} alt="" />
             </div>
@@ -49,23 +49,27 @@ function MainSection() {
             </div>
             <div className="strip"></div>
             <div className="diff-segments">C.R.I. FLUID SYSTEMS PRODUCTS CATER TO DIVERSE SEGMENTS</div>
+
+
             <div className="segments">
-                <div>
-
-                    CHEMICALS & PROCESS <strong>|</strong>
-                    POWER WATER & WASTE WATER <strong>|</strong>
-                    OILS & GAS <strong>|</strong>PHARMA SUGARS & DISTILLERIES
-                    <strong>|</strong>PAPER & PULP<strong>|</strong>
-                    MARINE & DEFENCE <strong>|</strong>METAL & MINING<strong>
-                        |</strong> FOOD & BEVERAGE<strong>|</strong>
-                </div>
-                <div>
-
-                    PETROCHEMICAL & REFINERIES SOLAR
-                    <strong>|</strong>BUILDING HVAC <strong>|
-                    </strong>FIRE FIGHTING <strong>|</strong>AGRICULTURE & RESIDENTIAL
-                </div>
+                <div className="segment-item">CHEMICALS & PROCESS</div>
+                <div className="segment-item">POWER</div>
+                <div className="segment-item">WATER & WASTE WATER</div>
+                <div className="segment-item">OILS & GAS</div>
+                <div className="segment-item">PHARMA SUGARS & DISTILLERIES</div>
+                <div className="segment-item">PAPER & PULP</div>
+                <div className="segment-item">MARINE & DEFENCE</div>
+                <div className="segment-item">METAL & MINING</div>
+                <div className="segment-item">FOOD & BEVERAGE</div>
+                <div className="segment-item">PETROCHEMICAL & REFINERIES</div>
+                <div className="segment-item">SOLAR</div>
+                <div className="segment-item">BUILDING</div>
+                <div className="segment-item">HVAC</div>
+                <div className="segment-item">FIRE FIGHTING</div>
+                <div className="segment-item">AGRICULTURE & RESIDENTIAL</div>
             </div>
+
+
         </main>
     )
 }
